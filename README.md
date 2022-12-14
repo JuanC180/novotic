@@ -1,0 +1,4 @@
+# Novotic 
+### Análisis
+### Requisitos
+### Modelado
