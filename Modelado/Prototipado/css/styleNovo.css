@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 100%;
+    height: 60px;
+    background-color: #023059;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+} 
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logoHeader{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoLogin{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.tituloLogin{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ebebeb;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 5px;
+
+    border-color: #000;    
+    border-style:solid;
+    border-width: 1px;
+    width: 290px;
+    /* font-weight: bold; */
+    /* border: 1px solid red; */
+}
+
+form a{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+input[type="text"]{
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+    /* font-weight: bold; */
+}
+
+input[type="submit"]{
+    margin-top: 2px;
+    background-color: #3b4d86;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+input[type="reset"]{
+    margin-top: 2px;
+    background-color: #3b4d86;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.error{
+    /*border: 5px solid blue !important;*/
+
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: red !important;
+}
+
+.mensaje{
+    background-color: red;
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+
+.contendorBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+

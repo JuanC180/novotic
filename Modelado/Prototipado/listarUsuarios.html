@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Novotic</title>
+</head>
+
+<body>
+    <header class="py-0 ">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid mx-sm-1 mx-1 mx-lg-5">
+                <a class="navbar-brand" href="#">
+                    <img id="imgLogo" src="https://www.novomatic.com/themes/novomatic/images/novomatic_n.svg"
+                        alt="Bootstrap" width="45" height="45">
+                </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center gap-1 gap-lg-4 my-2">
+                        <li class="nav-item hover-header py-2 ">
+                            <a class="text-decoration-none text-white " href="./loginNovo.html">
+                                Cerrar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-md-2 px-0  ">
+                <div class="d-flex justify-content-center align-items-center gap-3 my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+
+                    <p class="mb-0">Nombre</p>
+                </div>
+                <ul class=" d-flex flex-column justify-content-center px-0 my-0">
+                    <!-- <a class="px-5 py-2 border-bottom border-dark" href="listarRoles.html">Roles</a> -->
+                    <a class="px-5 py-2 border-bottom border-dark" href="listarProductos.html">Productos</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="listarClientes.html">Clientes</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="listarUsuarios.html">Usuarios</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="listarVentas.html">Ventas</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="listarCartera.html">Cartera</a>
+                   
+                </ul>
+            </aside>
+
+            <section class="col-12 col-md-10 my-0 d-flex justify-content-start flex-column">
+                <h1 class="text-center py-5 my-0">LISTADO DE USUARIOS</h1>
+
+                <div class="my-4">
+                    <div class="row">
+                        <div class="col">
+                            <a href="crearUsuario.html">
+                                <button type="submit" class="btn btn-dark w-50 btn-styles">Agregar nuevo
+                                    usuario</button>
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <input type="text" class="form-control w-75 rounded-pill" placeholder="Search"
+                                aria-label="Last name">
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover mb-5 ">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Identificación</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Dirección</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">---</th>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td class="">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input " type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="./editarUsuario.html">
+                                <img src="https://cdn-icons-png.flaticon.com/128/565/565722.png" alt="icono" width="25px" height="25px">
+                            </a>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">---</th>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input " type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="./editarUsuario.html">
+                                <img src="https://cdn-icons-png.flaticon.com/128/565/565722.png" alt="icono" width="25px" height="25px">
+                            </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">---</th>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input " type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                                <td>
+                                    <a href="./editarUsuario.html">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/565/565722.png" alt="icono" width="25px" height="25px">
+                                </a>
+                                    </div>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

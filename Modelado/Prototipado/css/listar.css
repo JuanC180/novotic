@@ -1,0 +1,59 @@
+
+*{
+    list-style: none;
+    text-decoration: none !important;
+}
+
+#imgLogo{
+    background-color: white;
+    border-radius: 50%;
+}
+
+header{
+    background-color: #021F59;
+}
+
+.hover-header:hover{
+    background-color: #41AED9;
+    width: 100% !important;
+    text-align: center;
+}
+
+@media (min-width: 992px){
+    .hover-header:hover{
+        background-color: #021F59;
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+aside{
+    /* background-color: #F2F2F2;   */
+    background-color: rgb(230, 230, 230);  
+    /* background-color: red; */
+    
+}
+aside ul a{
+    color: #000;
+    background-color: #fff;
+}
+aside ul a:hover{
+    background-color: #41AED9;
+    color:#fff;
+}
+section{
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(247, 246, 246);
+}
+
+.div1{
+
+}
+.div2{
+
+}
+
+.btn-styles{
+    background-color: #021F59;
+}
+
