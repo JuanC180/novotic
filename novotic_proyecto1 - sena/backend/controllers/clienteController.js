@@ -26,11 +26,100 @@ const registrar = async (req, res) =>{
     }
 }
 
+
+const editar = async(req, res) => {
+/*    const { cedula,
+        nombre,
+        apellido,
+        email,
+        password,
+        direccion,
+        camara_comercio,
+        nit_rut,
+        departamento,
+        ciudad,
+        estado,
+        role
+     } = req.body
+     */
+
+     const { id } = req.params;
+     const cliente = await Cliente.findById(id);
+
+     console.log(cliente)
+
+
+     if(!cliente){
+        return res.status(404).json({ msg: "NO ENCONTRDO."})
+    }
+
+    cliente.nombre = req.body.nombre || cliente.nombre;
+    cliente.apellido = req.body.apellido || cliente.apellido;
+    cliente.email = req.body.email || cliente.email;
+    cliente.password =req.body.password || cliente.password;
+    cliente.direccion =req.body.direccion || cliente.direccion
+    cliente.camara_comercio =req.body.camara_comercio || cliente.camara_comercio;
+    cliente.nit_rut =req.body.nit_rut || cliente.nit_rut;
+    cliente.departamento =req.body.departamento || cliente.departamento;
+    cliente.ciudad =req.body.ciudad || cliente.ciudad;
+    cliente.estado =req.body.estado || cliente.estado;
+    cliente.role =req.body.role || cliente.role;
+
+
+    try {
+        const clienteActualizado = await cliente.save();
+        res.json(clienteActualizado)
+    } catch (error) {
+        console.log(error)
+    }
+    
+
+/*
+    const existeUsuario = await Cliente.findOne({email});
+
+    if(!existeUsuario){
+        res.json({"msg":"No existe Usuario ",existeUsuario})
+    }
+
+    try {
+     
+        existeUsuario.nombre = nombre;
+        existeUsuario.apellido = apellido;
+        existeUsuario.email = email;
+        existeUsuario.password = password;
+        existeUsuario.direccion = direccion
+        existeUsuario.camara_comercio = camara_comercio;
+        existeUsuario.nit_rut = nit_rut;
+        existeUsuario.departamento = departamento;
+        existeUsuario.ciudad = ciudad;
+        existeUsuario.estado = estado;
+        existeUsuario.role = role;
+
+        await existeUsuario.updateOne({nombre,
+            apellido,
+            email,
+            password,
+            direccion,
+            camara_comercio,
+            nit_rut,
+            departamento,
+            ciudad,
+            estado,
+            role })
+
+        res.json({"msg": "Usuario actualizado"});
+        console.log(existeUsuario)
+    } catch (error) {
+        console.log(error)
+    }
+    */
+}
+
 const perfil = (req, res) => {
     
     const { cliente } = req;
 
-    res.json({ cliente })
+    res.json({ cliente });
 }
 
 const confirmar = async (req, res) =>{
@@ -142,5 +231,6 @@ export {
     perfil,
     olvidePassword,
     comprobarToken,
-    nuevoPassword
+    nuevoPassword,
+    editar
 }
